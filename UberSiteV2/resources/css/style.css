@@ -1,0 +1,464 @@
+/* ----------------------------------------------*/
+/*BASIC SETUP*/
+/* ----------------------------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-
+}
+
+
+
+
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    text-rendering: optimizeLegibility; 
+    overflow-x: hidden;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 200%;
+    border-bottom: 2px solid #555;
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;;
+
+}
+
+/*
+.flex-header {
+display: flex;
+flex: 1;
+mar
+
+}
+*/
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+
+a {
+    color:white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    /*    background:rgba(0,0,0,0.2);*/
+    /*  padding:20px 5px;*/
+    /*  display: inline-block;*/
+    /*
+    width: 100%;
+    text-align: center;
+    */
+    transition: all 0.5s;
+}
+
+/* ----------------------------------------------*/
+/*NAVIGATION*/
+/* ----------------------------------------------*/
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/header-iphone.JPG);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+
+}
+
+
+.flex-nav {
+    height: 60px;;
+    display: flex;
+
+}
+
+
+.flex-nav .logo {
+    height: 100%;
+    display: block;
+    flex: 1;
+    text-align: center;
+    align-self: center;
+    background-color: darkred;
+    padding: 7px 0;
+
+
+
+}
+
+.flex-nav .logo-li {
+    flex: 4; 
+
+}
+
+.flex-nav li {
+    flex: 2; 
+
+}
+
+.flex-nav ul {
+    display: flex;
+    list-style: none;
+    background-color: #3e3e3e;
+    flex: 1;
+
+    /*     border: 2px solid red;*/
+
+}
+
+.flex-nav li {
+    display: flex;
+    flex: 5;
+
+    /*    border: 2px solid blue;*/
+}
+
+.flex-nav a {
+    display: flex;
+    flex: 1;
+    align-self: center;
+    font-size: 80%;
+    height: 100%;
+    align-content: center;
+
+    /*    border: 2px solid yellow;*/
+
+}
+
+.flex-nav span {
+    display: block;
+    flex: 1;
+    text-align: center;
+    align-self: center;
+
+    /*    border: 2px solid green;*/
+
+}
+
+.flex-nav .lang {
+    flex: 1;  
+
+}
+.flex-nav a {
+
+    transition: transform 0.5s, border 0.5s;
+}
+
+.flex-nav a:hover {
+    background:rgba(0,0,0,0.3);
+    transform: scale(1.02);
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 5px;
+
+}
+
+.fixed-nav .flex-nav {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    
+    z-index: 1;
+}
+
+
+/* ----------------------------------------------*/
+/*FEATURES*/
+/* ----------------------------------------------*/
+
+.flex-text-box{
+    background-color: #fafafa;
+    box-shadow: 0  3px 3px rgba(34, 34, 34, 0.3);
+}    
+
+.section-features .container{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.flex-text-box {
+    display: flex;
+    width: calc(33.33% - 8px);
+    padding: 0.3% 3%;
+    margin: 4px 2px;
+    transition: transform 1s;
+    padding-bottom: 20px;
+}
+
+.flex-text-box:hover {
+    transform: scale(1.02) ; 
+}
+
+
+.flex-box-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-text-box h2{
+    font-size: 120%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.flex-text-box p{
+    font-size: 80%;
+    text-align: justify;
+    line-height: 145%;
+}
+
+.flex-text-box img{
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 30%;
+
+}
+
+
+/* ----------------------------------------------*/
+/*GALLERY*/
+/* ----------------------------------------------*/
+
+
+.flex-parent-gallery {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    flex: 1;
+
+}
+
+.flex-parent-gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+
+    list-style: none;
+    overflow: hidden;
+    background-color: #000;
+
+}
+
+.flex-parent-gallery li {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+
+}
+
+
+
+.flex-parent-gallery span {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    overflow: hidden;
+
+}
+
+.flex-parent-gallery img {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.img-size {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.img-size:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.section-gallery {
+    background-color: #dbdbdb;
+}
+
+/*-------------- BUTTONS -------------- */
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: flex;
+    margin: 15px auto;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 200px;
+    transition: transform 0.5s;
+
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color: #8e1f1b;
+    border: 1px solid #aa211c;
+    color: #fff; 
+    margin-right: 15px;
+
+}
+
+.btn-full:hover{
+    transform: scale(1.08);
+}
+
+.btn-holder {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 410px;
+    margin: auto;
+}
+
+/* ----------------------------------------------*/
+/*CONTACT FORM*/
+/* ----------------------------------------------*/
+
+.section-contact-form {
+
+width: 70%;
+margin: 0 auto;
+}
+
+
+.section-contact-form .flex-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.section-contact-form 
+    .flex-name,
+    .flex-message,
+    .flex-subject,
+    .flex-email {
+        display: flex;
+        flex: 1;
+        padding: 5px 5px;
+        align-items: center;
+    }
+
+.section-contact-form 
+    #subject,
+    #email,
+    #name,
+    textarea {
+        display: flex;
+        flex: 1;
+        height:25px;
+        background-color: #fafafa;
+        border: 1px solid #efefef;
+        
+
+    }
+
+.section-contact-form textarea {
+    height: 100px;
+}
+
+.section-contact-form label{
+    display: flex;
+    flex-basis: 9%;
+    height: 25px;
+    font-size: 90%;
+    
+}
+
+input::placeholder {
+    
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    font-size:90%;
+    text-rendering: optimizeLegibility;
+    padding-left: 10px;
+
+    
+    
+}
+
+textarea::placeholder {
+  
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    font-size:90%;
+    text-rendering: optimizeLegibility;
+    
+}
+/* ----------------------------------------------*/
+/*FOOTER*/
+/* ----------------------------------------------*/
+
+.section-footer * {
+    background-color: none;
+    color: #FFF;
+}
+
+.section-footer {
+    background-color: #3e3e3e;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-footer .container {
+    display: flex;
+    flex: 1;
+}
+
+.section-footer .social-media-div {
+    flex: 1;
+    align-items: center;
+    font-size: 120%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-footer .copy-div {
+    flex: 10;  
+    display: flex;
+}
+
+.social-link {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
